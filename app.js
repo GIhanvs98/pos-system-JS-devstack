@@ -46,7 +46,7 @@ document.getElementById('signupButton').addEventListener('click',function(){
 
 
 })
-function register(event) {
+function register() {
     let email=document.getElementById('registerUsername').value;
     let password=document.getElementById('registerPassword').value;
  
@@ -54,6 +54,13 @@ function register(event) {
         alert('please enter password and username');
         return;
     }
+    auth.createUserWithEmailAndPassword(email,password)
+    .then((userCredintials)=>{
+        console.log(userCredintials);
+        
+    }).catch((error)=>{
+        
+    })
 }
 
 
