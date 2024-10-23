@@ -198,6 +198,10 @@
             appId: "1:211859268453:web:a56ed4ae803b38c747378c",
             measurementId: "G-SHDTJKJQP1"
         };
+        const app =initializeApp(firebaseConfig);
+        const auth=getAuth(app);
+        const db=getFirestore(app);
+        const storage=getStorage(app);
     </script>
     <script src="app.js"></script>
 
