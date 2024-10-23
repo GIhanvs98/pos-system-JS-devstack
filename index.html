@@ -181,9 +181,27 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   
-    <script src="app.js" type="module"></script>
+    
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js';
+        import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, signOut } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+        import { getFirestore, doc, setDoc } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+        import { getStorage, ref, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-storage.js';
 
+        const firebaseConfig = {
+            apiKey: "AIzaSyDdQn71guNubXm6Jp_nfsQTMmw9f1whXvc",
+            authDomain: "pos-system-716a4.firebaseapp.com",
+            projectId: "pos-system-716a4",
+            storageBucket: "pos-system-716a4.appspot.com",
+            messagingSenderId: "211859268453",
+            appId: "1:211859268453:web:a56ed4ae803b38c747378c",
+            measurementId: "G-SHDTJKJQP1"
+        };
+    </script>
+    <script src="app.js"></script>
+
+   
 
 
 
