@@ -37,3 +37,10 @@ document.getElementById('productTab').addEventListener('click',function(event){
 
 });
 
+//register  with email and pssword
+document.getElementById('signupButton').addEventListener('click',function(){
+    document.getElementById('successRegisterAlert').style.display='none';
+    document.getElementById('errorRegisterAlert').style.display='none';
+})
+
+
