@@ -37,3 +37,32 @@ document.getElementById('productTab').addEventListener('click',function(event){
 
 });
 
+
+
+//register  with email and pssword
+document.getElementById('signupButton').addEventListener('click',function(){
+    document.getElementById('successRegisterAlert').style.display='none';
+    document.getElementById('errorRegisterAlert').style.display='none';
+
+
+})
+function register() {
+    let email=document.getElementById('registerUsername').value;
+    let password=document.getElementById('registerPassword').value;
+ 
+    if (!email || !password) {
+        alert('please enter password and username');
+        return;
+    }
+    auth.createUserWithEmailAndPassword(email,password)
+    .then((userCredintials)=>{
+        console.log(userCredintials);
+        
+    }).catch((error)=>{
+        
+    })
+}
+
+
+
+
